@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deselegant's | Bolsas Sustentáveis</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header id="header">
+        <div class="logo">deselegant's</div>
+        <nav class="nav-links">
+            <a href="#home">Início</a>
+            <a href="#produtos">Coleção</a>
+            <a href="#sustentabilidade">Sustentabilidade</a>
+            <a href="#sobre">Sobre Nós</a>
+        </nav>
+        <div class="header-actions">
+            <button id="cart-btn" aria-label="Abrir carrinho">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">Eco-Chic & Sustentável</span>
+            <h1>A elegância do lixo ao luxo.</h1>
+            <p>Bolsas artesanais de alta costura confeccionadas inteiramente com materiais reciclados. Redefinindo a moda com consciência.</p>
+            <a href="#produtos" class="btn-primary">Explorar Coleção</a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PRODUTOS -->
+    <section id="produtos" class="products-section">
+        <div class="section-title">
+            <h2>Coleção Exclusiva</h2>
+            <p>Cada peça é única, feita à mão e resgata resíduos que iriam para o meio ambiente.</p>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+            <!-- Os produtos serão injetados via JavaScript -->
+        </div>
+    </section>
+
+    <!-- SEÇÃO SUSTENTABILIDADE -->
+    <section id="sustentabilidade" class="sustainability-section">
+        <div class="sustainability-container">
+            <div class="sustainability-text">
+                <h2>O Nosso Manifesto Verde</h2>
+                <p>Na <strong>deselegant's</strong>, acreditamos que o verdadeiro luxo não custa a destruição do planeta. Transformamos lacres de latas, lonas plásticas industriais, caixas de leite e tecidos descartados em acessórios de alta deselegância e durabilidade.</p>
+                <div class="eco-stats">
+                    <div class="stat-item">
+                        <h3>1.200+</h3>
+                        <p>Garrafas e Lacres Reciclados</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Artesanal & Cruelty-Free</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sustainability-image">
+                <div class="eco-box-visual">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span>Moda Circular em Ação</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="about-section">
+        <div class="about-content">
+            <h2>Sobre o Trabalho Escolar</h2>
+            <p>Este projeto foi desenvolvido com dedicação para unir consciência ambiental, design inovador e empreendedorismo sustentável. Mostramos que com criatividade é possível transformar o que é considerado rejeito em objeto de desejo.</p>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>deselegant's</h3>
+                <p>Moda sustentável de alta costura alternativa.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <a href="#home">Início</a>
+                <a href="#produtos">Coleção</a>
+                <a href="#sustentabilidade">Sustentabilidade</a>
+            </div>
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 deselegant's - Trabalho Escolar de Sustentabilidade. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- CARRINHO DE COMPRAS (SIDEBAR) -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Sua Sacola Ecológica</h3>
+                <button id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Itens adicionados aparecem aqui -->
+                <p class="empty-cart-msg">Sua sacola está vazia.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">R$ 0,00</span>
+                </div>
+                <button id="checkout-btn" class="btn-primary">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link para o JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
