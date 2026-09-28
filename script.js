@@ -23,14 +23,6 @@ const products = [
         price: 250.00,
         description: "Mochila espaçosa confeccionada com tecido estruturado gerado a partir da reciclagem de garrafas PET.",
         image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        id: 4,
-        name: "Bolsa de Ombro Retrô",
-        tag: "Embalagens Tetra Pak",
-        price: 165.00,
-        description: "Design exclusivo que reutiliza camadas internas de caixas de leite tratadas para impermeabilização.",
-        image: "image.png"
     }
 ];
 
